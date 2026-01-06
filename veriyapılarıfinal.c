@@ -1,6 +1,7 @@
 //Yiðit Bilal Elmacý
 //2420171023
 //Github=byigitelmaci
+//https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=ZA1Urdebdw
 
 #include <stdio.h>
 
