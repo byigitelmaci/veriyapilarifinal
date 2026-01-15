@@ -39,7 +39,7 @@ int binarySearch(int dizi[], int sol, int sag, int aranan) {
 
 int main() {
     
-    int dizi[] = N{5, 62, 59, 7, 34, 81,73 }; 
+    int dizi[] = N{5,62,59,7,34,81,73,1,49,14}; 
     
    	
     int n = sizeof(dizi) / sizeof(dizi[0]);
