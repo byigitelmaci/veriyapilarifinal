@@ -4,7 +4,7 @@
 //Github=byigitelmaci
 
 #include <stdio.h>
-#define N
+#define N 10
 
 void bubbleSort(int dizi[], int n) {
     int i, j, gecici;
@@ -39,31 +39,31 @@ int binarySearch(int dizi[], int sol, int sag, int aranan) {
 
 int main() {
     
-    int dizi[] = N{5,62,59,7,34,81,73,1,49,14}; 
+    int dizi[N] = {5,62,59,7,34,81,73,1,49,14}; 
     
    	
-    int n = sizeof(dizi) / sizeof(dizi[0]);
+    int a = N;
     int i, aranan, sonuc;
 
     
     
     printf("Tanýmlanan Dizi= ");
-    for (i = 0; i < n; i++) {
+    for (i = 0; i < a; i++) {
         printf("%d ", dizi[i]);
     }
 
     
-    bubbleSort(dizi, n);
+    bubbleSort(dizi, a);
 
     printf("\nSiralanmis Dizi= ");
-    for (i = 0; i < n; i++) {
+    for (i = 0; i < a; i++) {
         printf("%d ", dizi[i]);
     }
     
     printf("\nAranacak sayiyi giriniz= ");
     scanf("%d", &aranan);
 
-    sonuc = binarySearch(dizi, 0, n - 1, aranan);
+    sonuc = binarySearch(dizi, 0, a - 1, aranan);
 
     if (sonuc != -1) {
         printf("Bulundu %d sayisi siralanmis dizinin %d. indeksinde\n", aranan, sonuc);
